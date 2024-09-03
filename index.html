@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Pemrog</title>
+    <link rel="stylesheet" href="style.css"
+        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-image: linear-gradient(to right, yellow, pink, yellow, pink, yellow, pink, yellow);
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        font-family: "Sofia", sans-serif;
+        font-size: 30px;
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    p {
+        font-family: "Sofia", sans-serif;
+        font-size: 30px;
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    .kotak {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation: berjalan 5s infinite alternate ease-in-out, warna 5s infinite linear;
+        margin-top: 20px;
+    }
+
+    @keyframes berjalan {
+        from {
+            left: 0;
+        }
+
+        to {
+            left: calc(40vw - 40px);
+            /* Batas layar minus lebar kotak dan sedikit jarak */
+        }
+    }
+
+    @keyframes warna {
+        0% {
+            background-color: rgb(255, 0, 0);
+        }
+
+        25% {
+            background-color: rgb(0, 0, 0);
+        }
+
+
+        50% {
+            background-color: salmon;
+        }
+
+        75% {
+            background-color: rgb(17, 0, 255);
+        }
+
+        100% {
+            background-color: rgb(255, 0, 255);
+        }
+    }
+</style>
+
+<body>
+    <h1 class="font-effect-shadow-multiple">PERBAIKAN PEMROGRAMAN DASAR</h1>
+    <p class="font-effect-outline">Nama: Desfa Qotrunnada</p>
+    <p class="font-effect-outline">Kelas: XII-RPL</p>
+
+    <div class="kotak"></div>
+</body>
+
+</html>
